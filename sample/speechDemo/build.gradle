@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        //版本号请根据自己的gradle插件版本号自行更改
+        classpath "com.android.tools.build:gradle:4.1.2"
+    }
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.iflytek.voicedemo"
+        minSdkVersion 26
+        targetSdkVersion 30
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    allprojects {
+        repositories {
+            google()
+            jcenter()
+            mavenCentral()
+        }
+    }
+
+}
+
+
+dependencies {
+    compile files('libs/Msc.jar')
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+}
