@@ -1,10 +1,10 @@
 {
   "name": "express",
   "version": "1.0.0",
-  "main": "yy.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node yy.js",
-    "dev": "nodemon yy.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",

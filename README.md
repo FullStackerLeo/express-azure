@@ -1,48 +1,66 @@
-# 💚 What is Backend ?
+# 💚 Express/Node 
 
-## 💙 Internet
+## 💙 Server
 ![](https://github.com/parthmern/Backend/blob/42a7c827672bc0f9c48228001ce982771a6795cf/Backend-TopicWise/z-images-extra/main/BackEnd_Development__Pure_Basics_I_with_anno%20(1)%20(1)_page-0003.jpg)
 
-➔ Like i have smartphone and i am sending "hii" msg to anyone then what happend here ?? <br/>
-➔ it converts into *data packets* which are invisible for human and they go to the nearest tower / ISP <br/>
-➔ Then tower receive data packets and convert them into *electrical signals*  <br/>
-➔ these electrical signals goes to any other country through *optical fibers* through ocean <br/>
-➔ then the same electrical signals goes to Tower in other country then converted into data packets <br/>
-➔ data packets received by user <br/>
+➔ Mainframe Era (1960s-1980s) <br/>
+➔ CGI (Common Gateway Interface) (1990s): <br/>
+➔ Perl (1990s)<br/>
+➔ ASP (Active Server Pages) (1990s) <br/>
+➔ JSP (Java Server Pages) (1990s) <br/>
+➔ PHP (1994) <br/>
+➔ Rise of Open Source and Frameworks (2000s-Present) <br/>
+➔ Python with Django (2005) <br/>
+➔ Java with Spring (late 1990s) <br/>
+➔ Ruby on Rails (2005) <br/>
+➔ Node.js with Express (2009) <br/>
+➔ Cloud Computing and Serverless (2010s-Present) <br/>
+➔ Continued Evolution: New languages like Go and frameworks like Spring Boot for Java are constantly emerging, and the landscape continues to evolve with new paradigms and tools for building modern web applications. <br/>
 
-<br/>
-➔ for small area , sended HII msg that converted into packets then it goes to tower / ISP ( internet service provider like JIO,AIRTEL,VI ) then same process as above <br/>
-<br/>
 
+## 🧡 Node.js
+```
+const http = require('http');
 
-➔ this ecosystem known as Internet [ more info chatGpt](https://chat.openai.com/share/86e0c5f3-9882-4b13-b7c4-6552d4afefce)
+const hostname = 'localhost';
+const port = 3000;
 
-## 🧡 IP address and Mac address
-➔ mobile has ip address and mac address <br/>
-➔ but when we connect with router at that time it uses Mac address <br/>
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/html');
+  res.end('Hello World\n');
+});
 
-## 💛 Server
-➔ A server is a computer or a software system that provides services, resources, or functionality to other computers or programs, often referred to as clients.  <br/>
-➔ if any computer is connected with internet and it programmed to accept Request and it can give Response.  <br/>
-➔ computer + programmed + connects with internet = server  <br/>
-➔ Client-server architecture = client jo request send karta hai and Server jo response bhejta hai <br/>
-➔ Serverroom has just many CPUs <br/>
+server.listen(port, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});
 
-## ❤️ http and https
-➔ hyper text transfer protocol / secured <br/>
-➔ protocol hai jiske basis par internet surf karne ki aazadi milti hai - data ka aana jaana iski wajah se ho raha hai <br/>
-➔ if any web has HTTP means not secured then the packages sended by the device can be seen by anyone by using hacking devices because data is not encrypted <br/>
-➔ HTTPS data packages are also captured by anyone but the data are encrypted so there is no meaning of this <br/>
+```
 
-## 💜 Ports 
-➔ server par commumication k liye port hote hai - port par server listen karta hai <br/>
-➔ ports are just numbers <br/>
-➔ [chatGpt](https://chat.openai.com/share/c674fb10-b527-46ef-9d8a-1429e97c6620) <br/>
+##### Too complicated for most scenarios.
 
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 
-## 🧡 server create using Express.js
+## 💛 Express
+
+```
+npm init
+npm install express
+```
+
+Encapsulate Reuqest and Response for easy to access.
+
+➔req.body  <br/>
+➔req.params  <br/>
+➔req.query  <br/>
+➔req.cookies  <br/>
+➔  <br/>
+➔  <br/>
+
+
+
+## 🧡 Step 1: server create using Express.js
 ➔ create folder then go into this folder using terminal <br/>
 ➔ `npm init` or `npm init -y` to create package.json file <br/>
 ➔ `npm i express` to create nodeModule file <br/>
@@ -57,13 +75,22 @@ const app = express();
 
 // 2) server live
 
-app.listen(3000, ()=>{
+app.listen(3001, ()=>{
     console.log("server started at port number 3000");
 })
 
-// here 3000 is port number from where our server can do communication or listen
+// here 3001 is port number from where our server can do communication or listen
 
 ```
+
+## 💜 Step 2: Middleware
+➔ server par commumication k liye port hote hai - port par server listen karta hai <br/>
+➔ ports are just numbers <br/>
+➔ [chatGpt](https://chat.openai.com/share/c674fb10-b527-46ef-9d8a-1429e97c6620) <br/>
+
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+
 
 ➔ Routes
 
