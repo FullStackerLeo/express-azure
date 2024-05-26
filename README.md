@@ -1,2 +1,0 @@
-# xunfeiASR
- xunfei original demo
