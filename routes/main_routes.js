@@ -10,6 +10,7 @@ router.get('/', (req, res) => {    res.render('index');  });
 router.get('/contact', (req, res) => {res.render('contact');});
 router.get('/pic', home.index);
 router.get('/completion', handleChatGPT);
+router.post('/completion', handleChatGPT);
 
 
 router.get('/images/:image_id', image.index);
