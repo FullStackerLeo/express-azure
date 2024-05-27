@@ -8,7 +8,7 @@ app.use(cors())
 app.use(express.static('public'));  //static
 
 // 2. routes
-const mainRouter = require('./routes/main');
+const mainRouter = require('./routes/main_routes');
 const apiRouter = require('./routes/api');
 app.use('/', mainRouter)
 app.use('/api', apiRouter)

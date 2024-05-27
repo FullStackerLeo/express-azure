@@ -84,13 +84,11 @@ app.listen(3001, ()=>{
 ```
 
 ## 💜 Step 2: Middleware
-➔ server par commumication k liye port hote hai - port par server listen karta hai <br/>
-➔ ports are just numbers <br/>
-➔ [chatGpt](https://chat.openai.com/share/c674fb10-b527-46ef-9d8a-1429e97c6620) <br/>
+```
+npm install express-handlebars body-parser cookie-parser morgan method-override errorhandler
 
-➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
-➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 
+```
 
 ➔ Routes
 
