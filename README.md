@@ -90,7 +90,7 @@ npm install express-handlebars body-parser cookie-parser morgan method-override 
 
 ```
 
-➔ Routes
+## 💜 Step 3: Routes
 
 ```
 const bodyParser = require('body-parser');   // used to parese req.body in express -> PUT or POST
@@ -110,6 +110,32 @@ app.post('/api/cars', (request,response)=>{
     response.send("car submitted successfully");
 })
 
+```
+
+## 💜 Step 4: Controller
+```
+    ask: async (req, res) => {
+      if (!req.body) {
+        return res.status(400).json({
+          success: false,
+          message: "No data provided in request body",
+        });
+      }
+  
+      const prompt = req.body.prompt;
+  
+      try {
+        if (prompt == null) {throw new Error("Uh oh, no prompt was provided");}
+  
+        // actual processing and response generation
+        return res.status(200).json({
+          success: true,
+          message: prompt,
+        });
+      } catch (error) {
+        console.log(error.message);
+      }
+    },
 ```
 
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
