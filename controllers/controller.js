@@ -17,7 +17,7 @@ module.exports = {
   
       try {
         // const ai_res = await getCompletion(userMessage);
-        console.log(prompt)
+        console.log('prompt is accepted by server: ' , prompt)
         const msg = [{ role: "system", content: "You are a helpful assistant." }];
         if (prompt) {
           msg.push({ role: "user", content: prompt });
@@ -28,14 +28,14 @@ module.exports = {
           messages: msg,
           model: "gpt-3.5-turbo",
         });
-        const completion=response.choices[0];
+        const completion=response.choices[0].message.content;
+        console.log('openai respond with: ' , completion)
       
  
         // Actual processing and response generation
         return res.status(200).json({
           success: true,
-          message: prompt,
-          ai_res: completion,
+          message: completion,
         });
       } catch (error) {
         console.log(error.message);
