@@ -18,9 +18,11 @@
 				<div class="inner">
 					<nav>
 						<ul>
-							<li><a href="#intro">Welcome Prototype</a></li>
-							<li><a href="#one">React</a></li>
-							<li><a href="#two">Express</a></li>
+							<li><a href="#intro">Welcome Express</a></li>
+							<li><a href="#one">express.Router()</a></li>
+							<li><a href="#two">Middleware</a></li>
+							<li><a href="#two">Mongoose</a></li>
+							<li><a href="#two">Handlebars </a></li>
 							<li><a href="#three">Get in touch</a></li>
 						</ul>
 					</nav>
@@ -33,12 +35,9 @@
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
-							<h1>Leo's Full Stack Space</h1>
-							<p>
-								<a href="https://zealous-desert-02167090f.5.azurestaticapps.net/"  target="_blank">React Front End @Azure</a>: React, Redux, MongoDB, Chatbot. <br />
-								<br />
-								<a href="https://fullstacker.azurewebsites.net/"  target="_blank">Express Backend @Azure</a>: OpenAI Gateway, RESTful API.<br />
-							</p>
+							<h1>Leo's Express</h1>
+							<p>	req.body, req.params, req.query, req.cookies</p>
+							<p>	res.send('HTML String');   res.sendFile('file.zip');   res.render('index');</p>
 							<ul class="actions">
 								<li><a href="#one" class="button scrolly">Learn more</a></li>
 							</ul>
@@ -51,8 +50,14 @@
 							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
 							<div class="content">
 								<div class="inner">
-									<h2>react.js</h2>
-									<p>Handles component creation, JSX processing, state management, and other core functionalities for building UI.</p>
+									<h2>Routes</h2>
+									<code>
+										// 3. routes<br />
+										const mainRouter = require('./routes/main_routes');<br />
+										const apiRouter = require('./routes/api');<br />
+										app.use('/', mainRouter);<br />
+										app.use('/api', apiRouter);<br />
+									</code>
 									<ul class="actions">
 										<li><a href="https://zealous-desert-02167090f.5.azurestaticapps.net/"  target="_blank" class="button">Learn more</a></li>
 									</ul>
