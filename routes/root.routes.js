@@ -1,13 +1,14 @@
 // root.routes.js
 const express = require('express');
 const router = express.Router();
-const mainController = require("../controllers");
+// const mainController = require("../controllers");
 
 // router.get('/hbs', (req, res) => {res.render('index');});
 router
   .route("/hbs")
   .get((req, res) => {res.render('index');});
-// router
+
+  // router
 //   .route("/dashboard")
 //   .get(mainController.dashboardPage);
 
