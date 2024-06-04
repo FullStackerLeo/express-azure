@@ -3,214 +3,325 @@
 	Azure by Leo FullStacker
 -->
 <html>
-	<head>
-		<title>Full Stack @ Azure</title>
-		<link rel="icon" type="image/png" href="images/favicon.jpg">
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
 
-		<!-- Sidebar -->
-			<section id="sidebar">
-				<div class="inner">
-					<nav>
-						<ul>
-							<li><a href="#intro">Welcome Express</a></li>
-							<li><a href="#one">express.Router()</a></li>
-							<li><a href="#two">Middleware</a></li>
-							<li><a href="#two">Mongoose</a></li>
-							<li><a href="#two">Handlebars </a></li>
-							<li><a href="#three">Get in touch</a></li>
-						</ul>
-					</nav>
-				</div>
-			</section>
+<head>
+	<title>Full Stack @ Azure</title>
+	<link rel="icon" type="image/png" href="images/favicon.jpg">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<body class="is-preload">
 
-				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<h1>Leo's Express</h1>
-							<p>	req.body, req.params, req.query, req.cookies</p>
-							<p>	res.send('HTML String');   res.sendFile('file.zip');   res.render('index');</p>
-							<ul class="actions">
-								<li><a href="#one" class="button scrolly">Learn more</a></li>
-							</ul>
-						</div>
-					</section>
+	<!-- Sidebar -->
+	<section id="sidebar">
+		<div class="inner">
+			<nav>
+				<ul>
+					<li><a href="#intro">Welcome Express</a></li>
+					<li><a href="#one">express.Router()</a></li>
+					<li><a href="#two">Middleware</a></li>
+					<li><a href="#three">Mongoose</a></li>
+					<li><a href="#four">Handlebars </a></li>
+					<li><a href="#final">Get in touch</a></li>
+				</ul>
+			</nav>
+		</div>
+	</section>
 
-				<!-- One -->
-					<section id="one" class="wrapper style2 spotlights">
-						<section>
-							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Routes</h2>
-									<code>
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Intro -->
+		<section id="intro" class="wrapper style1 fullscreen fade-up">
+			<div class="inner">
+				<h1>Leo's Express</h1>
+				<p>
+					<a href="https://zealous-desert-02167090f.5.azurestaticapps.net/"  target="_blank">API</a>: RESTful<br />
+					<a href="https://fullstacker.azurewebsites.net/hbs"  target="_blank">Handlebars</a>: Template Engine<br />
+				</p>
+
+
+				<code>
+					req.body; 
+					req.params; 
+					req.query; 
+					req.cookies; </br>
+					res.send('HTML String'); 
+					res.sendFile('file.zip');
+					res.render('index'); </br>
+
+				</code>
+				<p></p>
+				<ul class="actions">
+					<li><a href="#one" class="button scrolly">Learn more</a></li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- One -->
+		<section id="one" class="wrapper style2 spotlights">
+			<section>
+				<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
+				<div class="content">
+					<div class="inner">
+						<h2>Routes</h2>
+						<code>
 										// 3. routes<br />
 										const mainRouter = require('./routes/main_routes');<br />
 										const apiRouter = require('./routes/api');<br />
 										app.use('/', mainRouter);<br />
 										app.use('/api', apiRouter);<br />
 									</code>
-									<ul class="actions">
-										<li><a href="https://zealous-desert-02167090f.5.azurestaticapps.net/"  target="_blank" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>react-dom</h2>
-									<p>React is primarily focused on the UI. If you need to perform non-UI-related DOM manipulations, such as setting up complex event listeners or dealing with non-visual DOM elements (like meta tags), doing this within the React ecosystem can be overkill or unwieldy.</p>
-									<ul class="actions">
-										<li><a href="https://zealous-desert-02167090f.5.azurestaticapps.net/"  target="_blank" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>babel.min.js</h2>
-									<p>Transpiling & Transformation. In essence, Babel bridges the gap between modern JavaScript and the capabilities of older browsers, ensuring that your React application using JSX and modern features functions correctly across a wider range of browsers.</p>
-									<ul class="actions">
-										<li><a href="https://zealous-desert-02167090f.5.azurestaticapps.net/"  target="_blank" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-					</section>
+						<ul class="actions">
+							<li><a href="https://zealous-desert-02167090f.5.azurestaticapps.net/" target="_blank"
+									class="button">Learn more</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section>
+				<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
+				<div class="content">
+					<div class="inner">
+						<h2>react-dom</h2>
+						<p>React is primarily focused on the UI. If you need to perform non-UI-related DOM
+							manipulations, such as setting up complex event listeners or dealing with non-visual DOM
+							elements (like meta tags), doing this within the React ecosystem can be overkill or
+							unwieldy.</p>
+						<ul class="actions">
+							<li><a href="https://zealous-desert-02167090f.5.azurestaticapps.net/" target="_blank"
+									class="button">Learn more</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section>
+				<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
+				<div class="content">
+					<div class="inner">
+						<h2>babel.min.js</h2>
+						<p>Transpiling & Transformation. In essence, Babel bridges the gap between modern JavaScript and
+							the capabilities of older browsers, ensuring that your React application using JSX and
+							modern features functions correctly across a wider range of browsers.</p>
+						<ul class="actions">
+							<li><a href="https://zealous-desert-02167090f.5.azurestaticapps.net/" target="_blank"
+									class="button">Learn more</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</section>
 
-				<!-- Two -->
-					<section id="two" class="wrapper style3 fade-up">
-						<div class="inner">
-							<h2>Express Node.js</h2>
-							<p>Express.js is a minimal and flexible web application framework that provides a robust set of features to develop Node.js based web and mobile applications.</p>
-							<div class="features">
-								<section>
-									<span class="icon solid major fa-code"></span>
-									<h3>Routes</h3>
-									<p>Controller/Service, Render, Send, Nested, API .</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-lock"></span>
-									<h3>Middelwares</h3>
-									<!-- <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p> -->
-								</section>
-								<section>
-									<span class="icon solid major fa-cog"></span>
-									<h3>CommonJS</h3>
-									<!-- <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p> -->
-								</section>
-								<section>
-									<span class="icon solid major fa-desktop"></span>
-									<h3>Static</h3>
-									<!-- <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p> -->
-								</section>
-								<section>
-									<span class="icon solid major fa-link"></span>
-									<h3>Template Engine HBS</h3>
-									<!-- <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p> -->
-								</section>
-								<section>
-									<span class="icon major fa-gem"></span>
-									<h3>OpenAI Services</h3>
-									<!-- <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p> -->
-								</section>
+		<!-- Two -->
+		<section id="two" class="wrapper style3 fade-up">
+			<div class="inner">
+				<h2>Express Node.js</h2>
+				<p>Express.js is a minimal and flexible web application framework that provides a robust set of features
+					to develop Node.js based web and mobile applications.</p>
+				<div class="features">
+					<section>
+						<span class="icon solid major fa-code"></span>
+						<h3>Routes</h3>
+						<p>Controller/Service, Render, Send, Nested, API .</p>
+					</section>
+					<section>
+						<span class="icon solid major fa-lock"></span>
+						<h3>Middelwares</h3>
+						<!-- <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p> -->
+					</section>
+					<section>
+						<span class="icon solid major fa-cog"></span>
+						<h3>CommonJS</h3>
+						<!-- <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p> -->
+					</section>
+					<section>
+						<span class="icon solid major fa-desktop"></span>
+						<h3>Static</h3>
+						<!-- <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p> -->
+					</section>
+					<section>
+						<span class="icon solid major fa-link"></span>
+						<h3>Template Engine HBS</h3>
+						<!-- <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p> -->
+					</section>
+					<section>
+						<span class="icon major fa-gem"></span>
+						<h3>OpenAI Services</h3>
+						<!-- <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p> -->
+					</section>
+				</div>
+				<ul class="actions">
+					<li><a href="generic.html" class="button">Learn more</a></li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- Three -->
+		<section id="three" class="wrapper style2 spotlights">
+			<section>
+				<a href="#" class="image"><img src="images/mongoosestructure.png" alt="" data-position="center center" /></a>
+				<div class="content">
+					<div class="inner">
+						<h2>Mongoose</h2>
+						<ul class="actions">
+							<li><a href="https://zealous-desert-02167090f.5.azurestaticapps.net/" target="_blank"
+									class="button">Learn more</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section>
+				<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
+				<div class="content">
+					<div class="inner">
+						<h2>react-dom</h2>
+						<p>React is primarily focused on the UI. If you need to perform non-UI-related DOM
+							manipulations, such as setting up complex event listeners or dealing with non-visual DOM
+							elements (like meta tags), doing this within the React ecosystem can be overkill or
+							unwieldy.</p>
+						<ul class="actions">
+							<li><a href="https://zealous-desert-02167090f.5.azurestaticapps.net/" target="_blank"
+									class="button">Learn more</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section>
+				<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
+				<div class="content">
+					<div class="inner">
+						<h2>babel.min.js</h2>
+						<p>Transpiling & Transformation. In essence, Babel bridges the gap between modern JavaScript and
+							the capabilities of older browsers, ensuring that your React application using JSX and
+							modern features functions correctly across a wider range of browsers.</p>
+						<ul class="actions">
+							<li><a href="https://zealous-desert-02167090f.5.azurestaticapps.net/" target="_blank"
+									class="button">Learn more</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</section>
+
+
+
+
+
+		<section id="final" class="wrapper style1 fade-up">
+			<div class="inner">
+				<h2>Get in touch</h2>
+				<p>This site is static and hosted on Azure Static Web Apps. A clone of it resides in the Express/public
+					directory on Azure Web Apps. The performance difference is noticeable.</p>
+				<div class="split style1">
+					<section>
+						<form method="post" action="http://localhost:3001/newData">
+							<div class="fields">
+								<div class="field half">
+									<label for="name">Name</label>
+									<input type="text" name="name" id="name" />
+								</div>
+								<div class="field half">
+									<label for="email">Email</label>
+									<input type="text" name="email" id="email" />
+								</div>
+								<div class="field">
+									<label for="message">Message</label>
+									<textarea name="message" id="message" rows="5"></textarea>
+								</div>
 							</div>
 							<ul class="actions">
-								<li><a href="generic.html" class="button">Learn more</a></li>
+								<li><a href="" class="button submit">Send Message</a></li>
+								<li><button type="submit" class="button submit">Send Post</button></li>
 							</ul>
-						</div>
+						</form>
+						<script>
+							// Handle form submission
+							document.querySelector('form').addEventListener('submit', async (event) => {
+								event.preventDefault(); // Prevent default form submission
+					
+								const formData = new FormData(event.target); // Get form data
+								const url = 'http://test.com/newData'; // API endpoint
+					
+								try {
+									const response = await fetch(url, {
+										method: 'POST',
+										body: formData,
+									});
+					
+									if (response.ok) {
+										console.log('Message sent successfully!');
+									} else {
+										console.error(`Error sending message. Status code: ${response.status}`);
+									}
+								} catch (error) {
+									console.error('An error occurred:', error);
+								}
+							});
+						</script>
 					</section>
-
-				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2>Get in touch</h2>
-							<p>This site is static and hosted on Azure Static Web Apps. A clone of it resides in the Express/public directory on Azure Web Apps. The performance difference is noticeable.</p>
-							<div class="split style1">
-								<section>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="name">Name</label>
-												<input type="text" name="name" id="name" />
-											</div>
-											<div class="field half">
-												<label for="email">Email</label>
-												<input type="text" name="email" id="email" />
-											</div>
-											<div class="field">
-												<label for="message">Message</label>
-												<textarea name="message" id="message" rows="5"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
-										</ul>
-									</form>
-								</section>
-								<section>
-									<ul class="contact">
-										<li>
-											<h3>Address</h3>
-											<span>12345 Somewhere Road #654<br />
-											Nashville, TN 00000-0000<br />
-											USA</span>
-										</li>
-										<li>
-											<h3>Email</h3>
-											<a href="#">user@untitled.tld</a>
-										</li>
-										<li>
-											<h3>Phone</h3>
-											<span>(000) 000-0000</span>
-										</li>
-										<li>
-											<h3>Social</h3>
-											<ul class="icons">
-												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-											</ul>
-										</li>
-									</ul>
-								</section>
-							</div>
-						</div>
+					<section>
+						<ul class="contact">
+							<li>
+								<h3>Address</h3>
+								<span>12345 Somewhere Road #654<br />
+									Nashville, TN 00000-0000<br />
+									USA</span>
+							</li>
+							<li>
+								<h3>Email</h3>
+								<a href="#">user@untitled.tld</a>
+							</li>
+							<li>
+								<h3>Phone</h3>
+								<span>(000) 000-0000</span>
+							</li>
+							<li>
+								<h3>Social</h3>
+								<ul class="icons">
+									<li><a href="#" class="icon brands fa-twitter"><span
+												class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands fa-facebook-f"><span
+												class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a>
+									</li>
+									<li><a href="#" class="icon brands fa-instagram"><span
+												class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands fa-linkedin-in"><span
+												class="label">LinkedIn</span></a></li>
+								</ul>
+							</li>
+						</ul>
 					</section>
-
-			</div>
-
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Leo Full Stack. All rights reserved.</li><li>Design: <a href="http://react.com">React Express</a></li>
-					</ul>
 				</div>
-			</footer>
+			</div>
+		</section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+	</div>
 
-	</body>
+	<!-- Footer -->
+	<footer id="footer" class="wrapper style1-alt">
+		<div class="inner">
+			<ul class="menu">
+				<li>&copy; Leo Full Stack. All rights reserved.</li>
+				<li>Design: <a href="http://react.com">React Express</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
 </html>

@@ -2,7 +2,7 @@ const OpenAI = require("openai");
 const openai = new OpenAI();
 
 module.exports = {
-    index: function(req, res) {res.send('<h1>The home</h1>:index controller');},
+    index: function(req, res) {res.send('<h1>The home</h1>:index.js controller');},
 
     ask: async (req, res) => {
       console.log('here')
