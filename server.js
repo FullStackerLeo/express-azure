@@ -26,9 +26,9 @@ app.use((req, res, next) => {    console.log(`log：${req.method} ${req.url} ${n
 app.set('views', './hbs');    // template fodler
 app.set('view engine', 'hbs');  // template engine: Handlebars
 
-// 6. Mongoose
-const mongodb = require('./database/Mongo.database');
-mongodb.connectToDatabase();
+// // 6. Mongoose
+// const mongodb = require('./database/Mongo.database');
+// mongodb.connectToDatabase();
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {console.log(`Server listening on port ${PORT}`);});
