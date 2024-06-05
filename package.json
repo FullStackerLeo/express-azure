@@ -1,28 +1,15 @@
 {
-  "name": "express",
+  "name": "ex",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "body-parser": "^1.20.2",
-    "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
-    "errorhandler": "^1.5.1",
-    "express": "^4.19.2",
-    "express-handlebars": "^7.1.2",
-    "hbs": "^4.2.0",
-    "method-override": "^3.0.0",
-    "mongoose": "^8.3.4",
-    "morgan": "^1.10.0",
-    "openai": "^4.47.1"
-  },
-  "devDependencies": {
-    "nodemon": "^3.1.0"
+    "express": "^4.19.2"
   }
 }
